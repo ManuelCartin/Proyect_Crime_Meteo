@@ -26,7 +26,3 @@ Incorporating New Variables: New categorical variables related to crime and clim
 Improving the Violence Index: Optimizing classification for greater accuracy.
 
 Focusing on Explainability: Using techniques like SHAP or LIME to better understand why the model makes certain decisions, which is critical for deployment in a real-world environment.
-
-## Lessons from a PM:
-
-This project taught me that data engineering is 80% of the work and that product design (such as creating the violence index) is what really makes the difference. An AI product leader must understand and prioritize these challenges to guide the team toward a successful solution with real value.
