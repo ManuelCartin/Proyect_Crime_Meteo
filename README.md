@@ -1,28 +1,32 @@
 # Weather_Crime_Project
 # Introduction
-## *"Meteorological Crime" Project: A Hybrid Predictive Model* 
-This project was born from my interest in leading the full lifecycle of an Artificial Intelligence product. My goal was to validate the hypothesis that there is a relationship between criminal activity and meteorological variables, in order to develop a predictive model that could deliver real value. This project allowed me to integrate my passion for product management with a solid technical foundation, demonstrating that effective leadership is built on an understanding of data engineering challenges and strategic design.
+## *Meteorological Crimes Project: Data Strategy & Engineering*
+Introduction
+This project focuses on the data lifecycle as an enabler of strategic decisions. The main objective was to build a pipeline for consolidating heterogeneous data to validate the correlation between meteorological variables and crime patterns. More than a modeling exercise, this project is a demonstration of how to transform raw, unstructured data into an information asset with high predictive value.
 
-## Version 1.0: The Minimum Viable Product (MVP)
-The first phase was a proof of concept focused on validating the initial hypothesis. The main challenge was not the model itself, but rather the data engineering, which consumed most of the effort. I had to consolidate and clean five different datasets of historical crimes and meteorological variables without the help of a tutorial.
+Phase 1: Data Engineering and Refinement (The Core of the Project)
+The biggest challenge was not choosing the model, but orchestrating a data infrastructure capable of supporting complex analyses.
 
-### Key Strategic Decisions:
+Data Architecture:
+Ingestion and Consolidation: Manual integration of 5 independent data sources (crime history and meteorological records).
 
-Data Bias Management: The initial hypothesis yielded an accuracy of 34%. After identifying extreme class imbalance, I made the strategic decision to apply oversampling techniques (SMOTE). This not only improved performance but also validated the project's viability, raising accuracy to 79%.
+Cleaning and Normalization: Development of scripts for handling null values, time inconsistencies, and disparate meteorological unit formats.
 
-Classification Redesign: Instead of treating each crime as an individual class, I created a violence index to group crimes. This key decision simplified the model and improved pattern detection, which was the true differentiating factor.
+Strategic Feature Engineering:
 
-The code for this version and the data used can be found in crime_weather_final (1), meteo_sj_crime_merge_clean.xlsx, and other repository files.
+Creation of the Severity Index: Instead of processing raw labels, I designed a synthetic "Violence" metric to reduce noise and improve the data signal.
 
-## Version 2.0: Optimization and Explainability (In Progress)
-The second iteration of the project builds on the learnings from V1.0. Currently, I'm focusing on model optimization and explainability, crucial aspects for an AI product to gain adoption and build trust.
+Treatment of Imbalances: Implementation of resampling techniques (SMOTE) to mitigate bias in the class distribution, a critical step to ensure the integrity of any subsequent analysis.
 
-### Roadmap:
+Technical Results of the Structure:
+Data Quality: A production-ready data structure was achieved, increasing the system's responsiveness from 34% to 79% accuracy by improving sample representativeness.
 
-Expanding the Time Range (2015-2025): To enrich the model with more diverse and representative data.
+Phase 2: Architecture Optimization and Data Governance (Ongoing)
+The second iteration moves away from the "MVP" to focus on scalability and observability.
 
-Incorporating New Variables: New categorical variables related to crime and climate are being added.
+Engineering Roadmap:
+Dataset Enrichment (2015-2025): Expanding the time horizon to capture long-term climate cycles and changes in post-pandemic crime trends.
 
-Improving the Violence Index: Optimizing classification for greater accuracy.
+Categorical Variable Pipeline: Implementing advanced coding processes for new socio-meteorological variables.
 
-Focusing on Explainability: Using techniques like SHAP or LIME to better understand why the model makes certain decisions, which is critical for deployment in a real-world environment.
+My role in this project demonstrates that AI is secondary to data strategy. A model is only as good as the engineering behind it. I have led this process from raw data capture to the delivery of a refined, validated dataset ready to generate real impact on public safety decision-making.
