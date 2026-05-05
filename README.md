@@ -1,5 +1,14 @@
 # Weather_Crime_Project
-# Introduction
+# Overview
+
+This project originated from a simple real-world question:
+
+Does weather actually influence crime patterns?
+
+Motivated by this question, the project evolves into a data engineering and predictive modeling system, designed to validate or challenge this hypothesis using real-world data.
+
+Rather than focusing solely on model performance, the main objective was to build a robust data pipeline capable of transforming fragmented, heterogeneous datasets into a reliable analytical foundation.
+
 ## *Meteorological Crimes Project: Data Strategy & Engineering*
 Introduction
 This project focuses on the data lifecycle as an enabler of strategic decisions. The main objective was to build a pipeline for consolidating heterogeneous data to validate the correlation between meteorological variables and crime patterns. More than a modeling exercise, this project is a demonstration of how to transform raw, unstructured data into an information asset with high predictive value.
